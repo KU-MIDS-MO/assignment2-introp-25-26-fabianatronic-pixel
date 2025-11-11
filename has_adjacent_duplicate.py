@@ -1,4 +1,11 @@
 def has_adjacent_duplicate(L):
-    ### Replace with your own code (begin) ###
-    pass
-    ### Replace with your own code (end)   ###
+    if len(L)<2:
+        return False
+    previous=0
+    for number in L:
+        if number==previous:
+            return True
+        previous=number
+    return False
+    
+        
